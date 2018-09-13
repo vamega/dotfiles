@@ -29,7 +29,17 @@ if ! zgen saved; then
            'line' \
            'cursor' \
            'root'
-    zgen prezto 'history-substring-search' color 'yes'
+
+    zgen prezto 'autosuggestions' color 'yes'
+    # Information about format can be found here:
+    # man zshzle
+    # Online version:
+    # http://zsh.sourceforge.net/Doc/Release/Zsh-Line-Editor.html#Character-Highlighting
+    zgen prezto 'autosuggestions:color' found 'fg=8'
+
+    # zgen prezto 'history-substring-search' color 'yes'
+    # zgen prezto 'history-substring-search:color' found 'green'
+    # zgen prezto 'history-substring-search:color' not-found 'red'
 
     # plugins
     zgen prezto environment
@@ -46,7 +56,7 @@ if ! zgen saved; then
     source "${HOME}/.zgen/platform_extensions.zsh"
 
     zgen prezto syntax-highlighting
-    zgen prezto history-substring-search
+    # zgen prezto history-substring-search
     zgen prezto autosuggestions
     zgen prezto prompt
 
