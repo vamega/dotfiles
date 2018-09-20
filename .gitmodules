@@ -1,0 +1,6 @@
+[submodule "/Users/vmadiath/.tmux/plugins/tpm"]
+	path = /Users/vmadiath/.tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
+[submodule "/Users/vmadiath/.zgen"]
+	path = /Users/vmadiath/.zgen
+	url = https://github.com/tarjoilija/zgen.git

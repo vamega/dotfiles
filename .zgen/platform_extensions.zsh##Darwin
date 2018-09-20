@@ -1,8 +1,0 @@
-zgen prezto osx
-
-# Add docker completions
-# Ideally want to find a better way to do this later.
-for f in /Applications/Docker.app/Contents/Resources//etc/*.zsh-completion;
-do
-    ln -sf "$f" "$HOME/.zgen/sorin-ionescu/prezto-master/modules/completion/external/src/_${$(basename $f)%.zsh-completion}"
-done
