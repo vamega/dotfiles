@@ -1,1 +1,4 @@
 #/bin/bash
+
+# Initialise submodules
+yadm submodule update --recursive --init
